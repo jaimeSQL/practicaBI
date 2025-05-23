@@ -65,7 +65,7 @@ table FECHA
 
 	partition FECHA = calculated
 		mode: import
-		source = CALENDAR(MIN(call_log2[Date]),MAX(call_log2[Date]))
+		source = CALENDAR(MIN(call_log[Date]),MAX(call_log[Date]))
 
 	annotation PBI_Id = f18afb4adf374e959c66822bf555c7a8
 
