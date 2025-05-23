@@ -1,0 +1,173 @@
+table call_log2
+	lineageTag: fb51381d-8cd6-46bf-9d0d-0c2bcdd8adc0
+
+	column Agent
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 8151a6d1-d69a-4f4f-a28f-71f0930a52dd
+		summarizeBy: none
+		sourceColumn: Agent
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: 1b150f03-393d-402c-bdfa-d33bf39947ff
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Time
+		dataType: dateTime
+		formatString: Long Time
+		sourceProviderType: time
+		lineageTag: dfadb320-2c72-42ef-bc55-d57bcd6ae527
+		summarizeBy: none
+		sourceColumn: Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Topic
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: a3b2505c-fdfa-470a-bab1-c8f167c7bef4
+		summarizeBy: none
+		sourceColumn: Topic
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resolved
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: c88e33ff-25e2-48c5-8f72-58bfb40d5d78
+		summarizeBy: none
+		sourceColumn: Resolved
+
+		annotation SummarizationSetBy = Automatic
+
+	column AvgTalkDuration
+		dataType: dateTime
+		formatString: Long Time
+		sourceProviderType: time
+		lineageTag: effa1843-ed3b-4792-a75d-38ea1e10cc5b
+		summarizeBy: none
+		sourceColumn: AvgTalkDuration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Hour
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: dd1fc7e3-656a-4877-b1f5-77e117cf6754
+		summarizeBy: sum
+		sourceColumn: Hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column AvgMinTalkDuration
+		dataType: double
+		isNullable: false
+		sourceProviderType: double
+		lineageTag: e8262de8-cdee-4d34-a0d0-cbe0fbdd2942
+		summarizeBy: sum
+		sourceColumn: AvgMinTalkDuration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DESC_SATIS_CLIENTE =
+			SWITCH(call_log2[Satisfaction rating],0,"NO RESPONDIO",
+			                                                          1,"MUY DECEPCIONADO",
+			                                                          2,"DECEPCIONADO",
+			                                                          3,"LE DA IGUAL",
+			                                                          4,"SATISFECHO",
+			                                                          5,"MUY SATISFECHO")
+		lineageTag: 45d78f47-7bd3-49e4-a345-a5e305313d28
+		summarizeBy: none
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Call Id'
+		dataType: string
+		lineageTag: ee779a77-2784-4741-b568-ab1e991b122a
+		summarizeBy: none
+		sourceColumn: Call Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Answered (Y/N)'
+		dataType: string
+		lineageTag: f38a4006-ed8f-4ce1-a311-2f12f720fea0
+		summarizeBy: none
+		sourceColumn: Answered (Y/N)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Speed of answer in seconds'
+		dataType: double
+		lineageTag: 2b9a8ae3-270f-447a-b573-adb23ebb7ade
+		summarizeBy: sum
+		sourceColumn: Speed of answer in seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Satisfaction rating'
+		dataType: double
+		lineageTag: 416650ec-1e63-4e79-9ec4-6830c67f6168
+		summarizeBy: sum
+		sourceColumn: Satisfaction rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition call_log2 = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\Jaime Garcia\Downloads\Call Center Telecomunication Data.csv"),[Delimiter=";", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Call Id", type text}, {"Agent", type text}, {"Date", type date}, {"Time", type time}, {"Topic", type text}, {"Answered (Y/N)", type text}, {"Resolved", type text}, {"Speed of answer in seconds", Int64.Type}, {"AvgTalkDuration", type time}, {"Satisfaction rating", Int64.Type}}),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Tipo cambiado",null,0,Replacer.ReplaceValue,{"Satisfaction rating"}),
+				    #"Tipo cambiado2" = Table.TransformColumnTypes(#"Valor reemplazado",{{"Answered (Y/N)", type text}}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Tipo cambiado2","false","N",Replacer.ReplaceText,{"Answered (Y/N)"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","true","S",Replacer.ReplaceText,{"Answered (Y/N)"}),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Valor reemplazado2",{{"Resolved", type text}}),
+				    #"Valor reemplazado3" = Table.ReplaceValue(#"Tipo cambiado1","false","N",Replacer.ReplaceText,{"Resolved"}),
+				    #"Valor reemplazado4" = Table.ReplaceValue(#"Valor reemplazado3","true","S",Replacer.ReplaceText,{"Resolved"}),
+				    #"Columna duplicada" = Table.DuplicateColumn(#"Valor reemplazado4", "Time", "Time - Copia"),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columna duplicada",{{"Time - Copia", "Hour"}}),
+				    #"Hora extraída" = Table.TransformColumns(#"Columnas con nombre cambiado",{{"Hour", Time.Hour, Int64.Type}}),
+				    #"Columnas reordenadas" = Table.ReorderColumns(#"Hora extraída",{"Call Id", "Agent", "Date", "Time", "Hour", "Topic", "Answered (Y/N)", "Resolved", "Speed of answer in seconds", "AvgTalkDuration", "Satisfaction rating"}),
+				    #"Filas ordenadas" = Table.Sort(#"Columnas reordenadas",{{"AvgTalkDuration", Order.Descending}}),
+				    #"Columna duplicada1" = Table.DuplicateColumn(#"Filas ordenadas", "AvgTalkDuration", "AvgTalkDuration - Copia"),
+				    #"Minuto extraído" = Table.TransformColumns(#"Columna duplicada1",{{"AvgTalkDuration - Copia", Time.Minute, Int64.Type}}),
+				    #"Valor reemplazado5" = Table.ReplaceValue(#"Minuto extraído",null,0,Replacer.ReplaceValue,{"AvgTalkDuration - Copia"}),
+				    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Valor reemplazado5",{{"AvgTalkDuration - Copia", "AvgMinTalkDuration"}}),
+				    #"Columnas reordenadas1" = Table.ReorderColumns(#"Columnas con nombre cambiado1",{"Call Id", "Agent", "Date", "Time", "Hour", "Topic", "Answered (Y/N)", "Resolved", "Speed of answer in seconds", "AvgTalkDuration", "AvgMinTalkDuration", "Satisfaction rating"}),
+				    #"Filas ordenadas1" = Table.Sort(#"Columnas reordenadas1",{{"Satisfaction rating", Order.Ascending}}),
+				    #"Valor reemplazado6" = Table.ReplaceValue(#"Filas ordenadas1",null,#time(0, 0, 0),Replacer.ReplaceValue,{"AvgTalkDuration"}),
+				    #"Valor reemplazado7" = Table.ReplaceValue(#"Valor reemplazado6",null,0,Replacer.ReplaceValue,{"Speed of answer in seconds"})
+				in
+				    #"Valor reemplazado7"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

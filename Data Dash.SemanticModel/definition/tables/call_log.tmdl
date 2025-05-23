@@ -1,0 +1,113 @@
+table call_log
+	lineageTag: c5b1eb08-bacd-4066-a573-e3ff8fd6460b
+
+	column 'Call Id'
+		dataType: string
+		lineageTag: 7965f89c-18ef-4d06-8029-991a07c59b63
+		summarizeBy: none
+		sourceColumn: Call Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Agent
+		dataType: string
+		lineageTag: 12f82bf9-46ce-4fdf-9d3f-586f0f5bd58c
+		summarizeBy: none
+		sourceColumn: Agent
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 068220c8-4a60-4583-8672-10f09e55e7c7
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variación
+			isDefault
+			relationship: 1367609e-73b9-4d9c-8199-c8149d7c3c8f
+			defaultHierarchy: LocalDateTable_07e0e526-64ae-40e5-893b-1aa0ccff4b54.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 85660347-9b27-4293-9f5e-6b8d86c34061
+		summarizeBy: none
+		sourceColumn: Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Topic
+		dataType: string
+		lineageTag: 7e2bb33d-d892-4103-ae84-d10c35313835
+		summarizeBy: none
+		sourceColumn: Topic
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Answered (Y/N)'
+		dataType: string
+		lineageTag: a620a98f-46e2-4033-b488-4d9b2721278a
+		summarizeBy: none
+		sourceColumn: Answered (Y/N)
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resolved
+		dataType: string
+		lineageTag: 849b4ebb-64fe-407c-a5ea-df214b880626
+		summarizeBy: none
+		sourceColumn: Resolved
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Speed of answer in seconds'
+		dataType: int64
+		formatString: 0
+		lineageTag: 52ddebd3-bbdb-4aa4-a768-ee335fd30642
+		summarizeBy: sum
+		sourceColumn: Speed of answer in seconds
+
+		annotation SummarizationSetBy = Automatic
+
+	column AvgTalkDuration
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: c08b8f87-5351-4cf3-b62a-20818da5e8c5
+		summarizeBy: none
+		sourceColumn: AvgTalkDuration
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Satisfaction rating'
+		dataType: int64
+		formatString: 0
+		lineageTag: 923accb2-4c43-46ea-9113-53f40ef0fe66
+		summarizeBy: sum
+		sourceColumn: Satisfaction rating
+
+		annotation SummarizationSetBy = Automatic
+
+	partition call_log = m
+		mode: import
+		source =
+				let
+				    Origen = Csv.Document(File.Contents("C:\Users\Jaime Garcia\Downloads\Call Center Telecomunication Data.csv"),[Delimiter=";", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Call Id", type text}, {"Agent", type text}, {"Date", type date}, {"Time", type time}, {"Topic", type text}, {"Answered (Y/N)", type text}, {"Resolved", type text}, {"Speed of answer in seconds", Int64.Type}, {"AvgTalkDuration", type time}, {"Satisfaction rating", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

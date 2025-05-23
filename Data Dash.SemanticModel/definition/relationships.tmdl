@@ -1,0 +1,20 @@
+relationship a3c83d4e-e6be-434e-b989-1c73586a6658
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FECHA.Date
+	toColumn: LocalDateTable_fdb45efa-eac9-4ec9-9cc5-bb1d9ca4360b.Date
+
+relationship e9fa1b29-7206-4397-a127-ce38c771f243
+	fromColumn: call_log2.Date
+	toColumn: FECHA.Date
+
+relationship 1367609e-73b9-4d9c-8199-c8149d7c3c8f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: call_log.Date
+	toColumn: LocalDateTable_07e0e526-64ae-40e5-893b-1aa0ccff4b54.Date
+
+relationship AutoDetected_d6743b33-1c1a-4537-85e5-30573debe251
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: call_log.'Call Id'
+	toColumn: call_log2.'Call Id'
+

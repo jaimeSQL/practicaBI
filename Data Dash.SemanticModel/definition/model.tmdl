@@ -1,0 +1,26 @@
+model Model
+	culture: es-SV
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-SV
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["call_log2","VARIABLES","call_log"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.142.928.0 (25.04)+de52df9f0bb74ad93a80d89c52d63fe6d07e0e1b
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table call_log2
+ref table FECHA
+ref table DateTableTemplate_103fce55-d3b2-4712-8a85-fd7c43a3abf8
+ref table VARIABLES
+ref table LocalDateTable_fdb45efa-eac9-4ec9-9cc5-bb1d9ca4360b
+ref table call_log
+ref table LocalDateTable_07e0e526-64ae-40e5-893b-1aa0ccff4b54
+
+ref cultureInfo es-SV
+
