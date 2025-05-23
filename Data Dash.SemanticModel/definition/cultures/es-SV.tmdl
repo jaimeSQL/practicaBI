@@ -8,7 +8,7 @@ cultureInfo es-SV
 			    "call_log": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2"
+			          "ConceptualEntity": "call_log"
 			        }
 			      },
 			      "State": "Generated",
@@ -503,7 +503,7 @@ cultureInfo es-SV
 			    "call_log.resolved": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Resolved"
 			        }
 			      },
@@ -579,7 +579,7 @@ cultureInfo es-SV
 			    "call_log.topic": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Topic"
 			        }
 			      },
@@ -665,7 +665,7 @@ cultureInfo es-SV
 			    "call_log.agent": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Agent"
 			        }
 			      },
@@ -791,7 +791,7 @@ cultureInfo es-SV
 			    "call_log.date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Date"
 			        }
 			      },
@@ -828,7 +828,7 @@ cultureInfo es-SV
 			    "call_log.time": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Time"
 			        }
 			      },
@@ -895,7 +895,7 @@ cultureInfo es-SV
 			    "call_log.avg_talk_duration": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "AvgTalkDuration"
 			        }
 			      },
@@ -979,7 +979,7 @@ cultureInfo es-SV
 			    "call_log.hour": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Hour"
 			        }
 			      },
@@ -1045,7 +1045,7 @@ cultureInfo es-SV
 			    "call_log.avg_min_talk_duration": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "AvgMinTalkDuration"
 			        }
 			      },
@@ -1138,7 +1138,7 @@ cultureInfo es-SV
 			    "call_log.desc_satis_cliente": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "DESC_SATIS_CLIENTE"
 			        }
 			      },
@@ -2012,7 +2012,7 @@ cultureInfo es-SV
 			    "call_log.call_id": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Call Id"
 			        }
 			      },
@@ -2134,7 +2134,7 @@ cultureInfo es-SV
 			    "call_log.answered_y_n": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Answered (Y/N)"
 			        }
 			      },
@@ -2174,7 +2174,7 @@ cultureInfo es-SV
 			    "call_log.speed_of_answer_in_seconds": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Speed of answer in seconds"
 			        }
 			      },
@@ -2297,7 +2297,7 @@ cultureInfo es-SV
 			    "call_log.satisfaction_rating": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "call_log2",
+			          "ConceptualEntity": "call_log",
 			          "ConceptualProperty": "Satisfaction rating"
 			        }
 			      },
@@ -2425,1547 +2425,9 @@ cultureInfo es-SV
 			          }
 			        }
 			      ]
-			    },
-			    "call_log1": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "call log": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "call_log": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "log": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "call journal": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "call diary": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "call daybook": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "call logbook": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "journal": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "diary": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "daybook": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "logbook": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "call record": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "call calendar": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.call_id": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Call Id"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "call id": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "call": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "call identification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "call identity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "call identifier": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "call credential": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "song": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "noise": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "cry": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "sound": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "plea": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "invitation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.agent": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Agent"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "agent": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "manager": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "mediator": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "negotiator": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "go-between": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "representative": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "proxy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "vehicle": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "driver": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
-			          "cause": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        },
-			        {
-			          "mean": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.date": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Date"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "date": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "call_log1.date.jerarquía_de_fecha": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "VariationSource": "Date",
-			          "VariationSet": "Variación",
-			          "Hierarchy": "Jerarquía de fechas"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "jerarquía de fecha": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.date.año": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "VariationSource": "Date",
-			          "VariationSet": "Variación",
-			          "Hierarchy": "Jerarquía de fechas",
-			          "HierarchyLevel": "Año"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "año": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date año": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment año": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period año": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.date.trimestre": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "VariationSource": "Date",
-			          "VariationSet": "Variación",
-			          "Hierarchy": "Jerarquía de fechas",
-			          "HierarchyLevel": "Trimestre"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period trimestre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.date.me": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "VariationSource": "Date",
-			          "VariationSet": "Variación",
-			          "Hierarchy": "Jerarquía de fechas",
-			          "HierarchyLevel": "Mes"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "me": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date me": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment me": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "period me": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.date.día": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "VariationSource": "Date",
-			          "VariationSet": "Variación",
-			          "Hierarchy": "Jerarquía de fechas",
-			          "HierarchyLevel": "Día"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "día": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date día": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "moment día": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period día": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.time": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Time"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "time": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "duration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "interval": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "moment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "timetable": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "call_log1.topic": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Topic"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "topic": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "theme": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "subject": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "matter": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "issue": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "area": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "focus": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.answered_y_n": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Answered (Y/N)"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "answered (y/n)": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "answered": {
-			            "State": "Generated",
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "answered (y": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "answered ( y n )": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "n)": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.resolved": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Resolved"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "resolved": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "determined": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "set": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "resolute": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "fixed": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "committed": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.speed_of_answer_in_seconds": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Speed of answer in seconds"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "speed of answer in seconds": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "speed of answer in second": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "rapidity of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "swiftness of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "speediness of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "quickness of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "promptness of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.52
-			          }
-			        },
-			        {
-			          "haste of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "hurry of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "hustle of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.504
-			          }
-			        },
-			        {
-			          "velocity of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        },
-			        {
-			          "momentum of answer in second": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.494
-			          }
-			        }
-			      ]
-			    },
-			    "call_log1.avg_talk_duration": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "AvgTalkDuration"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "avg talk duration": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "AvgTalkDuration": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "average talk duration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "avg talk length": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg talk extent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg talk interval": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg talk period": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "avg talk spell": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "call_log1.satisfaction_rating": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "call_log",
-			          "ConceptualProperty": "Satisfaction rating"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "satisfaction rating": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "rating": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "satisfaction assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "satisfaction evaluation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "evaluation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "satisfaction score": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "satisfaction grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "satisfaction ranking": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "satisfaction mark": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "score": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "call_log1_date_me_has_call_log1_date_día": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date.me": {
-			          "Target": {
-			            "Entity": "call_log1.date.me"
-			          }
-			        },
-			        "call_log1.date.día": {
-			          "Target": {
-			            "Entity": "call_log1.date.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.me"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_días"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.día"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_have_me"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "call_log1.date.día"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "call_log1.date.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_are_in_me1"
-			        }
-			      ]
-			    },
-			    "call_log1_date_trimestre_has_call_log1_date_me": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date.trimestre": {
-			          "Target": {
-			            "Entity": "call_log1.date.trimestre"
-			          }
-			        },
-			        "call_log1.date.me": {
-			          "Target": {
-			            "Entity": "call_log1.date.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.trimestre"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_me"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.me"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "call_log1.date.me"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "call_log1.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_are_in_trimestres1"
-			        }
-			      ]
-			    },
-			    "call_log1_date_año_has_call_log1_date_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date.año": {
-			          "Target": {
-			            "Entity": "call_log1.date.año"
-			          }
-			        },
-			        "call_log1.date.trimestre": {
-			          "Target": {
-			            "Entity": "call_log1.date.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.año"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "años_have_trimestres"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.trimestre"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_años"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "call_log1.date.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "call_log1.date.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_años1"
-			        }
-			      ]
-			    },
-			    "call_log1_date_jerarquía_de_fecha_has_call_log1_date_día": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "call_log1.date.jerarquía_de_fecha"
-			          }
-			        },
-			        "call_log1.date.día": {
-			          "Target": {
-			            "Entity": "call_log1.date.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días"
-			        }
-			      ]
-			    },
-			    "call_log1_date_jerarquía_de_fecha_has_call_log1_date_me": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "call_log1.date.jerarquía_de_fecha"
-			          }
-			        },
-			        "call_log1.date.me": {
-			          "Target": {
-			            "Entity": "call_log1.date.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me"
-			        }
-			      ]
-			    },
-			    "call_log1_date_jerarquía_de_fecha_has_call_log1_date_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "call_log1.date.jerarquía_de_fecha"
-			          }
-			        },
-			        "call_log1.date.trimestre": {
-			          "Target": {
-			            "Entity": "call_log1.date.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres"
-			        }
-			      ]
-			    },
-			    "call_log1_date_jerarquía_de_fecha_has_call_log1_date_año": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "call_log1.date.jerarquía_de_fecha"
-			          }
-			        },
-			        "call_log1.date.año": {
-			          "Target": {
-			            "Entity": "call_log1.date.año"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años"
-			        }
-			      ]
-			    },
-			    "call_log1_date_has_jerarquía_de_fecha": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1.date": {
-			          "Target": {
-			            "Entity": "call_log1.date"
-			          }
-			        },
-			        "call_log1.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "call_log1.date.jerarquía_de_fecha"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1.date"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date.jerarquía_de_fecha"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_jerarquía_de_fechas"
-			        }
-			      ]
-			    },
 			    "fecha_date_me_has_fecha_date_día": {
 			      "Binding": {
 			        "ConceptualEntity": "FECHA"
@@ -4329,42 +2791,9 @@ cultureInfo es-SV
 			        }
 			      ]
 			    },
-			    "call_log1_has_call_log": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log": {
-			          "Target": {
-			            "Entity": "call_log"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_call_log_2"
-			        }
-			      ]
-			    },
 			    "call_log_has_call_log1": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4397,7 +2826,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_fecha": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4441,339 +2870,9 @@ cultureInfo es-SV
 			        }
 			      ]
 			    },
-			    "call_log1_has_satisfaction_rating": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.satisfaction_rating": {
-			          "Target": {
-			            "Entity": "call_log1.satisfaction_rating"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.satisfaction_rating"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_satisfaction_rating"
-			        }
-			      ]
-			    },
-			    "call_log1_has_avg_talk_duration": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.avg_talk_duration": {
-			          "Target": {
-			            "Entity": "call_log1.avg_talk_duration"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.avg_talk_duration"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_avg_talk_durations"
-			        }
-			      ]
-			    },
-			    "call_log1_has_speed_of_answer_in_seconds": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.speed_of_answer_in_seconds": {
-			          "Target": {
-			            "Entity": "call_log1.speed_of_answer_in_seconds"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.speed_of_answer_in_seconds"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_speed_of_answer_in_seconds"
-			        }
-			      ]
-			    },
-			    "call_log1_has_resolved": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.resolved": {
-			          "Target": {
-			            "Entity": "call_log1.resolved"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.resolved"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_resolved"
-			        }
-			      ]
-			    },
-			    "call_log1_has_answered_y_n": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.answered_y_n": {
-			          "Target": {
-			            "Entity": "call_log1.answered_y_n"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.answered_y_n"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_answered_y_n"
-			        }
-			      ]
-			    },
-			    "call_log1_has_topic": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.topic": {
-			          "Target": {
-			            "Entity": "call_log1.topic"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.topic"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_topics"
-			        }
-			      ]
-			    },
-			    "call_log1_has_time": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.time": {
-			          "Target": {
-			            "Entity": "call_log1.time"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.time"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_times"
-			        }
-			      ]
-			    },
-			    "call_log1_has_date": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.date": {
-			          "Target": {
-			            "Entity": "call_log1.date"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.date"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_dates"
-			        }
-			      ]
-			    },
-			    "call_log1_has_agent": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.agent": {
-			          "Target": {
-			            "Entity": "call_log1.agent"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.agent"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_agents"
-			        }
-			      ]
-			    },
-			    "call_log1_has_call_id": {
-			      "Binding": {
-			        "ConceptualEntity": "call_log"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "call_log1": {
-			          "Target": {
-			            "Entity": "call_log1"
-			          }
-			        },
-			        "call_log1.call_id": {
-			          "Target": {
-			            "Entity": "call_log1.call_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "call_log1"
-			            },
-			            "Object": {
-			              "Role": "call_log1.call_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "call_logs_have_call_ids"
-			        }
-			      ]
-			    },
 			    "call_log_has_satisfaction_rating": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4806,7 +2905,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_speed_of_answer_in_seconds": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4839,7 +2938,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_answered_y_n": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4872,7 +2971,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_call_id": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4938,7 +3037,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_variable_prom_tiempo_responder_llamada": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4971,7 +3070,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_variable_prom_satisfacion": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5004,7 +3103,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_variable_prom_tiempo_llamada": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5037,7 +3136,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_variable_cont_satisfac_positiva_client": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5070,7 +3169,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_variable_cont_rating_satisfac": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5367,7 +3466,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_desc_satis_cliente": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5400,7 +3499,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_avg_min_talk_duration": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5433,7 +3532,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_hour": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5466,7 +3565,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_avg_talk_duration": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5499,7 +3598,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_time": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5532,7 +3631,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_date": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5565,7 +3664,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_agent": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5598,7 +3697,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_topic": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5631,7 +3730,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_resolved": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5829,7 +3928,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_variables_porc_satisfac_tot_client": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5862,7 +3961,7 @@ cultureInfo es-SV
 			    },
 			    "call_log_has_variables_cont_agentes": {
 			      "Binding": {
-			        "ConceptualEntity": "call_log2"
+			        "ConceptualEntity": "call_log"
 			      },
 			      "State": "Generated",
 			      "Roles": {

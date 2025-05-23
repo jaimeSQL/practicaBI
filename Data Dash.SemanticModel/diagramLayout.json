@@ -39,22 +39,9 @@
             "x": 0,
             "y": 0
           },
-          "nodeIndex": "call_log2",
+          "nodeIndex": "call_log",
           "size": {
             "height": 432.63157894736838,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 961.18421052631584,
-            "y": 85.55263157894737
-          },
-          "nodeIndex": "call_log",
-          "nodeLineageTag": "c5b1eb08-bacd-4066-a573-e3ff8fd6460b",
-          "size": {
-            "height": 300,
             "width": 234
           },
           "zIndex": 0
